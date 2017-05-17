@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>tp7 DOM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1 class="main-title">Películas IMDB</h1>
+
+  <hr>
+  <div class="group-button">
+  <button  class="boton-style" id="agregar" onclick="moduleIMDB.iniciarPrograma()"><b>Agregar película</b></button>
+  <button class="boton-style" id="eliminar" onclick="moduleIMDB.eliminarPelicula();"><b>Eliminar película</b></button>
+  <button class="boton-style" id="mostrar" onclick="moduleIMDB.mostrar();"><b>Ver todas las peliculas</b></button>
+
+  </div>
+
+  <hr>
+
+  <div id="peliculas">
+    <!-- Las noticias se van a ir agregando aca -->
+  </div>
+
+  <hr>
+
+  <!-- Cargamos Nuestro JavaScript -->
+  <script src="js/module.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+#noticias {
+	border: 5px solid gray;
+	height: auto;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+.main-title {
+	text-align: center;
+	letter-spacing: 0.2em;
+	font-size: 4em;
+	color: gray;
+}
+.form-pelis {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 0;
+    border: 2px lightgray;
+}
+.sumary-title {
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-size: 1.5em;
+    color: darkgoldenrod;
+    padding: 2pc;
+}
+.form-pelis label {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 10px;
+    color: darkgoldenrod;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: initial;
+}
+.form-pelis input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: darkgray;
+}
+.form-pelis textarea {
+    font-size: 14px;
+    text-align: justify;
+    width: 100%;
+    border: 1px solid lightgrey;
+    margin-bottom: 30px;
+    height: 60px;
+    color: darkgray;
+}
+.group-button{
+	width: 100%;
+	display: block;
+	margin: auto;
+	padding:0;
+	text-align: center;
+}
+.boton-style{
+	width: 30%;
+	height: 3em;
+	font-family: 'Helvetica';
+	size:2em;
+	background: gray; 
+	color: #fff;
+	margin: 10px;
+	border:2px solid gray;
+	border-radius: 5px;
+}
+.boton-style:hover, .boton-style:active {
+	background: #fff; 
+	color: gray;
+	border:2px solid gray;
+	border-radius: 5px;
+}

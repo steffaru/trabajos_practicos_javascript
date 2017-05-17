@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>tp8 EVENTOS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1 class="main-title">Películas IMDB - Mejorada</h1>
+    <form  class="form-pelis">
+      <fieldset class="sumary-title">Película
+        <label for="id-peli">Ingrese el ID de la película</label>
+        <input type="text" id="id-peli" name="id-p" value="">
+        <label for="titulo">Ingrese el título</label>
+        <input type="text" id="titulo" name="tit" value="">
+        <label for="descripcion">Ingrese el breve descripción</label>
+        <textarea type="text" id="descripcion" name="des" value=""></textarea>
+        <label for="link-img">Ingrese el link de la imagen</label>
+        <input type="text" id="link-img" name="lk" value="http://">
+      </fieldset>
+    </form>
+  <div class="group-button">
+  <button  class="boton-style" id="agregar"><b>Agregar película</b></button>
+  <button class="boton-style" id="mostrar"><b>Ver todas las peliculas</b></button>
+  <select class="boton-style" name="ordenados" id="ordenar">
+    <option value="az">Ordenar de la A - Z</option>
+    <option value="za">Ordenar de la Z - A</option>
+    <option value="id-asc">Ordenar por ID</option>
+  </select>
+
+  </div>
+
+
+  <div id="peliculas">
+    <!-- Las noticias se van a ir agregando aca -->
+  </div>
+
+
+  <!-- Cargamos Nuestro JavaScript -->
+  <script src="js/module.js"></script>
+  <script>
+    window.onload = function(){
+      moduleIMDB.iniciarPrograma();
+    }
+  </script>
+</body>
+</html>

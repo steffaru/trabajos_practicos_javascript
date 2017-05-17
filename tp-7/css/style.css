@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+}
+
+#noticias {
+  border: 5px solid gray;
+  height: auto;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.main-title {
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-size: 4em;
+  color: gray;
+}
+.group-button{
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding:0;
+  text-align: center;
+}
+.boton-style{
+  width: 30%;
+  height: 3em;
+  font-family: 'Helvetica';
+  size:2em;
+  background: gray; 
+  color: #fff;
+  margin: 10px;
+  border:2px solid gray;
+  border-radius: 5px;
+}
+.boton-style:hover, .boton-style:active {
+  background: #fff; 
+  color: gray;
+  border:2px solid gray;
+  border-radius: 5px;
+}
