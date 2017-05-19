@@ -1,0 +1,54 @@
+<DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Trabajo Práctico 9 - W O R K S H O P</title>
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+</head>
+<body>
+<section class="container">
+	<article class="main-title">
+		<h1>TO DO LIST</h1>
+		<hr>
+	</article>
+	<article class="main-add">
+		<h2>Tarea</h2>
+		<form class="main-form" id="add-task">
+			<label for="id-number">Cree un identificador para la tarea</label>
+			<input type="number" id="id-number" name="numero-id" value="" placeholder="Sólo números">
+			<label for="id-number">Añade un titulo para la tarea</label>
+			<input type="text" id="id-title" name="titulo-id" value="" placeholder="Título">
+			<label for="id-ltext">Ingrese una breve descripción a la tarea</label>
+			<textarea name="descripcion" id="id-ltext" value="" placeholder="Descripción"></textarea>
+		</form>	
+	</article>
+	<article class="main-buttons">
+		<button id="one-add">Agregar</button>
+		<button id="all-show">Mostrar Todas</button>
+		<button id="all-delete">Eliminar Todas</button>
+		<hr>
+	</article>
+	<article class="main-list">
+		<select  name="ordenados" id="orderby">
+			<option value="o-asc">Ordenar de A-Z</option>
+			<option value="o-desc">Ordenar de Z-A</option>
+			<option value="o-id">Ordenar por ID</option>
+		</select>
+		<article id="show-tasks">
+			<!-- Cargamos las tareas -->
+		</article>
+		<hr>
+	</article>
+</section>
+
+ <!-- Cargamos Nuestro JavaScript -->
+  <script src="js/toDoList.js"></script>
+  <script>
+  	window.onload = function(){
+  		toDoList.iniciarPrograma();
+  	};
+  </script>
+</body>
+</html>
