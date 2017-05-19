@@ -42,8 +42,6 @@ var toDoList = (function () {
       tasks[pos].realizado = true;
     }
     console.log(tasks[pos].realizado);
-    //var container = document.getElementById("tasks");
-    //container.removeChild(document.getElementById('Tarea- '+ task));
     localStorage.setItem("tareas", JSON.stringify(tasks));
   }
   
@@ -73,7 +71,6 @@ var toDoList = (function () {
     alert('Se eliminó la tarea satisfactoriamente');
   }
   function borrarTodas(task){
-    var pos = validarDuplicidad(task);
     tasks.splice(task);
     localStorage.setItem("tareas", JSON.stringify(tasks));
     alert('Se eliminaron TODAS las tareas, por favor recargue la página para ver los cambios');
