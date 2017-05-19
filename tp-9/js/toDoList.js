@@ -85,7 +85,7 @@ var toDoList = (function () {
     }
     return false;
   }
-
+// Ordenar por Albeto - Inversa - Numéricamente
   function orderTasks(){
     var orden = document.getElementById("orderby").value;
     console.log('k', orden);
