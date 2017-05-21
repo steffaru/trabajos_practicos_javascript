@@ -143,14 +143,11 @@ var toDoList = (function () {
       var span_edit = document.createElement('span');
       var un_delete = document.createElement('button');
       var span_delete = document.createElement('span');
-
-
       //Se carga los atributos y textos de los elementos
       un_div.setAttribute("id","tarea-" + t.id);
       un_div.className = "class_tarea";
       un_text.appendChild(document.createTextNode(t.descripcion));
       un_check.className = "class-chekbox";
-
       // id a los inputs de la tarea
       un_h1.setAttribute("id", "task-titulo-" + t.id)
       un_text.setAttribute("id", "task-descripcion-" + t.id)
