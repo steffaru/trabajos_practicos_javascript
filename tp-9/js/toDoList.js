@@ -115,7 +115,7 @@ var toDoList = (function () {
           return 0;
         break;
         
-        default "error":
+        default:
           return console.log("Seleccione alguna opción válida");
         break;
       }
@@ -130,6 +130,8 @@ var toDoList = (function () {
     for (var i = 0; tasks.length > i; i++) {
       // t contiene el objeto de tarea
       var t = tasks[i];
+
+      console.log(t);
       
       // Datos del Formulario
       var un_div = document.createElement('div');
