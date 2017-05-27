@@ -84,7 +84,10 @@ var moduleIMDB = (function () {
             return 1;
           return 0;
         break;
-      }
+
+        default "error":
+          return console.log("Seleccione alguna opción válida")
+      } break;
        
     });
     mostrarPelis();
